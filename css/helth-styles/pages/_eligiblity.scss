@@ -1,0 +1,106 @@
+.eligibility {
+    background-color: #F7F7F7;
+    padding: 2rem 0;
+
+    .eligibility_content {
+        background: #fff;
+        padding: 2rem;
+        display: flex;
+        // justify-content: space-between;
+        gap: 24px;
+        align-items: flex-start;
+        .eligibility_form {
+
+            flex: 1;
+
+            .eligibility_heading {
+                color: #5f6368;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            .eligibility_text {
+                color: #5f6368;
+                font-size: 18px;
+                margin-bottom: 2rem;
+            }
+
+            .eligibility_questions {
+                .eligibility_question {
+                    margin-bottom: 1.5rem;
+
+                    .el_question {
+                        color: #5f6368;
+                        font-size: 16px;
+                        line-height: 1.2;
+                    }
+
+                    .label {
+                        color: #5f6368;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .eligibility_contact {
+            width: 240px;
+            background: #f8f8f8;
+            padding: 24px;
+
+            .el_open {
+                border-bottom: 2px solid #D2D2D2;
+                padding: 2rem 0;
+
+                .el_contact_heading {
+                    font-weight: bold;
+                    font-size: 16px;
+                    text-align: center;
+                }
+
+                .address_info {
+                    display: flex;
+                    gap: 16px;
+
+                    .info_image {
+                        width: 30px;
+                        height: 30px;
+                        background-color: rgba($color: #1E88E5, $alpha: .1);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 7.5px;
+
+                        img {
+                            max-height: 15px;
+                            height: 100%;
+                            min-width: 15px;
+                            width: 100%;
+                        }
+                    }
+
+                    p {
+                        color: #5F6368;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+
+                p.el_text {
+                    color: #5f6368;
+                    text-align: center;
+                    margin: 0;
+
+                    &.el_day {
+                        font-size: 14px;
+                    }
+
+                    &.el_time {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

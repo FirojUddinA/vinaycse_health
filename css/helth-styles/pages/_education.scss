@@ -1,0 +1,43 @@
+.education{
+    margin-bottom: 4rem;
+    .education_container{
+        display: flex;
+        gap: 32px;
+        .education_sidebar{
+            display: flex;
+            flex-direction: column;
+            width: 180px;
+
+            a{
+                
+                color: #5f6368;
+                font-size: 18px;
+                padding: 4px 0;
+                &.active{
+                    color: #1E88E5;
+                    font-weight: 600;
+                }
+                &:hover{
+                    color: #1E88E5;
+                }
+            }
+        }
+        .education_content{
+            flex: 1;
+            .education_heading{
+                font-size: 22px;
+                color: #5f6368;
+            }
+            .education_text_content{
+                font-size: 16px;
+                color: #5f6368;
+                margin-bottom: 20px;
+            }
+            .find_fits_plan{
+                font-size: 22px;
+                color: #e77c40;
+                text-decoration: underline;
+            }
+        }
+    }
+}

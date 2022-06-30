@@ -1,0 +1,77 @@
+
+
+.navbar_toggle_button{
+    position: relative;
+    background-color: #ffffff;
+    height: 47px;
+    width: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: .5px solid rgba($color: #5F6368, $alpha: 0.5);
+    gap: 6px;
+    .nav_toggle_icon{
+        position: relative;
+        width: 30px;
+        height: 2px;
+        display: block;
+        background-color:  #5F6368;
+        border-radius: 5px;
+        margin: 0;
+    }
+}
+
+.navbar{
+    padding-bottom: 0 !important;
+    background: #fff;
+    box-shadow: none;
+    border-bottom: 1px solid #B4B4B4;
+    .container{
+        align-items: flex-end;
+        .navbar-brand{
+            padding-bottom: .75rem;
+            flex: 1;
+        }
+        .navbar-nav{
+            .nav-item{
+                padding: 0 25px;
+                display: flex;
+    align-items: flex-end;
+                .nav-link{
+                    border-bottom: 1px solid transparent;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #5F6368;
+                    transition: .3;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    &.active{
+                        border-bottom-color: #1B87E5;
+                        font-weight: 600;
+                        color: #5F6368;
+                    }
+                    &:hover{
+                        border-bottom-color: #1B87E5;
+                    }
+                }
+            }
+            
+        }
+        .navbar-collapse{
+            flex-grow: initial;
+        }
+        .nav_action_group{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin-bottom: .75rem;
+            gap: 12px;
+            flex: 1;
+        }
+    }
+}

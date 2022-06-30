@@ -1,0 +1,33 @@
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .eligibility {
+       
+    
+        .eligibility_content {
+            flex-direction: column;
+            .eligibility_contact {
+                width: 100%;
+                .address_info {
+                    justify-content: center;   
+                }
+            }
+        }
+    }
+    footer {
+        .footer_content {
+            .left_container_links{
+                flex-wrap: wrap;
+                gap: 0 !important;
+                justify-content: space-between;
+                .usefil_links{
+                    width: calc(100% / 2 - 50px);
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+  }

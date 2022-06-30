@@ -1,0 +1,210 @@
+.cart_details {
+    background-color: #F7F7F7;
+
+    .cart_heading {
+        .cart_heading_text {
+            color: #1E88E5;
+            display: flex;
+            font-size: 20px;
+            font-weight: bold;
+
+            .cart_badge {
+                margin-left: 12px;
+                width: 25px;
+                height: 25px;
+                background: #fff;
+                color: #1E88E5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: 600;
+                border-radius: 50%;
+                box-shadow: 0 .3px .6px rgba($color: #000000, $alpha: .25);
+            }
+        }
+    }
+
+
+
+
+    .add_plans {
+        display: flex;
+        gap: 20px;
+
+        .btn {
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: none;
+            color: #5F6368;
+            border-radius: 5px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            background-position: 0 0, 0 0, 100% 0, 0 100%;
+            background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+            background-repeat: no-repeat;
+            background-image:
+                repeating-linear-gradient(0deg, #D2D2D2, #D2D2D2 10px, transparent 10px, transparent 20px), // left
+                repeating-linear-gradient(90deg, #D2D2D2, #D2D2D2 10px, transparent 10px, transparent 20px), // top
+                repeating-linear-gradient(180deg, #D2D2D2, #D2D2D2 10px, transparent 10px, transparent 20px), // right
+                repeating-linear-gradient(270deg, #D2D2D2, #D2D2D2 10px, transparent 10px, transparent 20px) // bottom
+            ;
+            border-image: repeating-linear-gradient(0deg, #D2D2D2, #D2D2D2 10px, transparent 10px, transparent 20px);
+
+            i {
+                margin-right: 20px;
+            }
+
+            flex: 1;
+
+            &.vision {
+                background-color: #fff;
+
+                i {
+                    color: #1E88E5;
+                }
+            }
+
+            &.dental {}
+        }
+    }
+
+    .cart_Summary {
+        background: #fff;
+        padding: 16px;
+        box-shadow: 0 .5px 1px rgba($color: #000000, $alpha: .25);
+        border-radius: 5px;
+        .Summary_title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #1E88E5;
+            margin-bottom: 24px;
+        }
+        .summary_item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+            .item_name {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                h4 {
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #5F6368;
+
+                    i {}
+                }
+
+                a {
+                    font-size: 8px;
+                    color: #1E88E5;
+                }
+            }
+
+            a.adon {
+                font-size: 8px;
+                color: #1E88E5;
+                font-weight: 600;
+            }
+            .item_price {
+                width: 80px;
+                font-weight: 600;
+                font-size: 14px;
+                color: #5F6368;
+                margin: 0;
+            }
+
+        }
+        .summary_total {
+            display: flex;
+            justify-content: space-between;
+
+            .item_name {
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: #5F6368;
+                }
+            }
+
+            .item_price {
+                font-weight: bold;
+                font-size: 16px;
+                color: #5F6368;
+                width: 80px;
+            }
+        }
+        .confirm_btn {
+            display: flex;
+            margin-bottom: 16px;
+            .btn {
+                flex: 1;
+                background: #1E88E5;
+                box-shadow: none;
+                color: #fff;
+                font-size: 12px;font-weight: bold;
+                border-radius: 3px;
+            }
+        }
+        .help_text {
+            font-size: 12px;
+            color: #5F6368;
+            a {
+                color: #1E88E5;
+            }
+        }
+    }
+}
+
+.dental_vision{
+    background: #fff;
+    .cart_heading {
+        .cart_heading_text {
+            color: #1E88E5;
+            display: flex;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+    }
+}
+.empty_cart{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .empty_cart_container{
+        text-align: center;
+        .enpty_shopping_cart{
+            width: 194px;
+            height: 194px;
+            border-radius: 50%;
+            background-color: rgba($color: #D2D2D2, $alpha: .2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        .empty_cart_heading{
+            font-size: 20px;
+            font-weight: bold;
+            color: #5F6368;
+            margin: 0;
+        }
+        .empty_cart_text{
+            font-size: 16px;
+            color: #5F6368;
+            margin-bottom: 12px;
+        }
+        .empty_cart_button{
+            border-radius: 5px;
+            color: #fff;
+            background-color: #1E88E5;
+            box-shadow: none;
+            padding: 10px;
+            text-transform: capitalize;
+        }
+    }
+}
